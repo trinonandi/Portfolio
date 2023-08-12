@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PortfolioWebsite';
+  // By default light mode
+  bodyStyle: any = {
+    'background-color': 'rgb(46, 46, 59);'
+  }
+
+  makeNightMode() {
+    this.bodyStyle = {
+      'background-color': '#fdf6ed;'
+    }
+  }
 }

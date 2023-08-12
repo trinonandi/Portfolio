@@ -45,8 +45,9 @@
 }
 
 .social {
-  font-family: "Roboto Mono", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .social a {

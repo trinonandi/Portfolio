@@ -1,4 +1,9 @@
 
+.btn-purple-fill {
+  background-color: #7171ff;
+  color: white;
+  padding: .5rem;
+}
 .navbar-brand {
   margin-right: 5%;
   font-family: "Roboto Mono", sans-serif;
@@ -18,10 +23,25 @@
   border-radius: 0.25rem;
   background-color: rgb(113, 113, 255);
   color: rgb(255, 255, 255);
+  padding-left: .5rem;
 }
 
 .nav-link-active {
   background-color: rgb(170, 170, 255);
   border-radius: 0.25rem;
   color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link.active {
+  border-radius: 0.25rem;
+  background-color: rgb(113, 113, 255);
+  color: rgb(255, 255, 255);
+}
+
+.night-mode {
+  background-color: rgb(46, 46, 59);
+}
+
+.light-mode {
+  background-color: #fdf6ed;
 }
