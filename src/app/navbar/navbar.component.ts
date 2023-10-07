@@ -17,18 +17,26 @@ export class NavbarComponent {
   navActive: string = ""
   night: boolean = false
   nightButtonText: string = "🌙  Night Mode"
+  navBar: any;
+  ngAfterViewInit() {
+    this.navBar = this.document.getElementById('navbar');
+  }
 
   activateNightMode() {
     this.night = true
     this.nightButtonText = "☀️  Light Mode"
     this.document.body.classList.remove("light-mode");
     this.document.body.classList.add("night-mode");
+    this.navBar?.classList.remove("light-mode");
+    this.navBar?.classList.add("night-mode"); 
   }
   activateLightMode() {
     this.night = false
     this.nightButtonText = "🌙  Night Mode"
     this.document.body.classList.remove("night-mode");
     this.document.body.classList.add("light-mode");
+    this.navBar?.classList.remove("night-mode");
+    this.navBar?.classList.add("light-mode"); 
   }
 
   goToHome() {
