@@ -1,0 +1,44 @@
+.intro-container {
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 300;
+    margin-top: 10%;
+    font-size: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #7171ff;
+  }
+
+.row {
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+
+.heading {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 2.5rem;
+    color: #7171ff;
+}
+
+.details {
+    font-family: "Source Code Pro", sans-serif;
+    color: #6c6c6c;
+    padding: 0.5rem;
+}
+
+.img-container {
+    width: 40rem;
+    height: 22.5rem;
+    border-radius: 1.5rem;
+    transition: transform 250ms;
+}
+
+.project-container:hover .img-container {
+    transform: translateY(-10px);
+}
+
+.project-container:hover .heading {
+    text-decoration: underline;
+}
