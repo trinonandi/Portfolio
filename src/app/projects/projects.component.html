@@ -1,1 +1,17 @@
-<p>projects works!</p>
+<div class="container-fluid mt-5">
+    <div class="intro-container ms-5">
+        <p>Projects</p>
+    </div>
+    <div class="project-container" *ngFor="let project of projects; let i = index">
+        <div class="row">
+            <div class="col">
+                <img [src]="project.imgUrl" alt="project image {{i}}" class="img-container">
+            </div>
+            <div class="col">
+                <div class="heading">{{project.heading}}</div>
+                <div class="details">{{project.date}}</div>
+                <div class="details"><p>{{project.details}}</p></div>
+            </div>
+        </div>
+    </div>
+</div>
